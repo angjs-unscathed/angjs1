@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+	
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/underscore/underscore-min.js"></script>
+	<script src="scripts/angular.min.js"></script>
+	<script src="scripts/angular-resource.min.js"></script>
+	<script src="scripts/angular-route.min.js"></script>
+	<script src="scripts/app.js"></script>
+</head>
+<body ng-app="myApp">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>#</th><th>Order No.</th><th>Details</th></th>
+						</tr>
+					</thead>
+						<tbody>
+			              <tr>
+			                <td>1</td><td>1234</td><td>15" Samsung Laptop</td>
+			                <td><a href="#ShowOrder/1234">show details</a></td>
+			              </tr>
+			              <tr>
+			                <td>2</td><td>5412</td><td>2TB Seagate Hard drive</td>
+			                <td><a href="#ShowOrder/5412">show details</a></td>
+			              </tr>
+			              <tr>
+			                <td>3</td><td>9874</td><td>D-link router</td>
+			                <td><a href="#ShowOrder/9874">show details</a></td>
+			              </tr>
+			            </tbody>
+				</table>
+
+				<ng-view></ng-view>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
